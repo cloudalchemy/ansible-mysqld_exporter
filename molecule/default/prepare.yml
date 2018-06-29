@@ -1,0 +1,13 @@
+---
+- name: Prepare
+  hosts: all
+  gather_facts: false
+  tasks:
+  - name: Install mysqld server
+    package:
+      name: mysql-server
+      state: present
+  - name: Start mysql server
+    systemd:
+      name: mysqld
+      state: started

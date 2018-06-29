@@ -1,0 +1,16 @@
+---
+mysqld_exporter_version: 0.16.0
+mysqld_exporter_web_listen_address: "0.0.0.0:9104"
+
+mysqld_exporter_my_cnf: ""
+
+mysqld_exporter_collect:
+  - systemd
+  - textfile:
+      directory: "{{ mysqld_exporter_textfile_dir }}"
+#  - filesystem:
+#      ignored-mount-points: "^/(sys|proc|dev)($|/)"
+#      ignored-fs-types: "^(sys|proc|auto)fs$"
+
+mysqld_exporter_no_collect: []
+

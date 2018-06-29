@@ -1,0 +1,13 @@
+---
+- name: check collector flags
+  fail:
+    msg: "Collector flags cannot be both disabled and enabled"
+  when: item in mysqld_exporter_collect
+  with_items: "{{ mysqld_exporter_no_collect }}"
+
+- name: "Get checksum for {{ go_arch_map[ansible_architecture] | default(ansible_architecture) }} architecture"
+  set_fact:
+    __mysqld_exporter_checksum: "{{ item.split(' ')[0] }}"
+  with_items:
+    - "{{ lookup('url', 'https://github.com/prometheus/mysqld_exporter/releases/download/v' + mysqld_exporter_version + '/sha256sums.txt', wantlist=True) | list }}"
+  when: "('linux-' + (go_arch_map[ansible_architecture] | default(ansible_architecture)) + '.tar.gz') in item"
