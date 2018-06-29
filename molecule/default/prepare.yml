@@ -1,13 +1,16 @@
 ---
 - name: Prepare
   hosts: all
-  gather_facts: false
   tasks:
   - name: Install mysqld server
     package:
-      name: mysql-server
+      name: "{{ mysql_package }}"
       state: present
   - name: Start mysql server
     systemd:
-      name: mysqld
+      name: "{{ mysql_service }}"
       state: started
+  vars:
+    mysql_package: "{{ 'mariadb' if (ansible_os_family | lower) == 'redhat' else 'mariadb-server' }}"
+    mysql_service: mysqld
+
