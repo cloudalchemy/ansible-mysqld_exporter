@@ -1,6 +1,8 @@
 ---
-mysqld_exporter_version: 0.16.0
+mysqld_exporter_version: 0.11.0
 mysqld_exporter_web_listen_address: "0.0.0.0:9104"
+
+mysqld_exporter_dsn: "exporter:password@(localhost:3306)/"
 
 mysqld_exporter_my_cnf: ""
 

@@ -1,13 +1,13 @@
 ---
 - include: preflight.yml
 
-- name: Create the Node Exporter group
+- name: Create the MySQL Exporter group
   group:
     name: "{{ __mysqld_exporter_group }}"
     state: present
     system: true
 
-- name: Create the Node Exporter user
+- name: Create the MySQL Exporter user
   user:
     name: "{{ __mysqld_exporter_user }}"
     groups: "{{ __mysqld_exporter_group }}"
@@ -43,7 +43,7 @@
   copy:
     src: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}/mysqld_exporter"
     dest: "/usr/local/bin/mysqld_exporter"
-    mode: 0750
+    mode: 0755
     owner: root
     group: root
   notify:
