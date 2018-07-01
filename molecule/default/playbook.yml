@@ -4,4 +4,5 @@
   roles:
     - ansible-mysqld-exporter
   vars:
+    mysqld_exporter_dsn: "root@(localhost:3306)/"
     mysqld_exporter_web_listen_address: "127.0.0.1:9104"
