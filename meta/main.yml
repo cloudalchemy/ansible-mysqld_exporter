@@ -22,8 +22,8 @@ galaxy_info:
   galaxy_tags:
   - monitoring
   - prometheus
-  - mysqld-exporter
-  - mysql-exporter
+  - exporter
+  - mysqld
   - metrics
   - database
   - sql
