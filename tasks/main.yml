@@ -63,5 +63,6 @@
 
 - name: Ensure mysqld_exporter is enabled on boot
   systemd:
+    daemon_reload: true
     name: mysqld_exporter
     enabled: true
