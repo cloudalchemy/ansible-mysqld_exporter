@@ -6,6 +6,10 @@
 
 - Create version tag [\#2](https://github.com/cloudalchemy/ansible-mysqld-exporter/issues/2)
 
+**Merged pull requests:**
+
+- Fix README typo [\#4](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/4) ([sdvcrx](https://github.com/sdvcrx))
+
 ## [0.1.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2018-09-06)
 **Merged pull requests:**
 
