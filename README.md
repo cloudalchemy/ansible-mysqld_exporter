@@ -2,7 +2,7 @@
 
 # Ansible Role: mysqld exporter
 
-[![Build Status](https://travis-ci.org/cloudalchemy/ansible-mysqld-exporter.svg?branch=master)](https://travis-ci.org/cloudalchemy/ansible-mysqld-exporter)
+[![Build Status](https://travis-ci.com/cloudalchemy/ansible-mysqld-exporter.svg?branch=master)](https://travis-ci.com/cloudalchemy/ansible-mysqld-exporter)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
 [![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.mysqld_exporter-blue.svg)](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter/)
 [![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-mysqld-exporter.svg)](https://github.com/cloudalchemy/ansible-mysqld-exporter/tags)
