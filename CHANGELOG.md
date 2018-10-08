@@ -8,6 +8,7 @@
 
 **Merged pull requests:**
 
+- move to ansible 2.7 [\#5](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/5) ([paulfantom](https://github.com/paulfantom))
 - Fix README typo [\#4](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/4) ([sdvcrx](https://github.com/sdvcrx))
 
 ## [0.1.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2018-09-06)
