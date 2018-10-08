@@ -14,7 +14,7 @@ Deploy prometheus [mysqld exporter](https://github.com/prometheus/mysqld_exporte
 
 ## Requirements
 
-- Ansible >= 2.3
+- Ansible >= 2.5 (It might work on previous versions, but we cannot guarantee it)
 
 ## Role Variables
 

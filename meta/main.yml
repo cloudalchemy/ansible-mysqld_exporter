@@ -3,7 +3,7 @@ galaxy_info:
   author: Pawel Krupa
   description: Prometheus Mysqld Exporter
   license: MIT
-  min_ansible_version: 2.3
+  min_ansible_version: 2.5
   platforms:
   - name: Ubuntu
     versions:
