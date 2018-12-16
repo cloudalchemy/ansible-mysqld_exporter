@@ -4,6 +4,7 @@
 
 **Closed issues:**
 
+- Ansible galaxy name is not correct in the README [\#6](https://github.com/cloudalchemy/ansible-mysqld-exporter/issues/6)
 - Create version tag [\#2](https://github.com/cloudalchemy/ansible-mysqld-exporter/issues/2)
 
 **Merged pull requests:**
@@ -14,7 +15,7 @@
 ## [0.1.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2018-09-06)
 **Merged pull requests:**
 
-- Avoid outputting password in service file [\#3](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/3) ([mrsmeds](https://github.com/mrsmeds))
+- Avoid outputting password in service file [\#3](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/3) ([nikosmeds](https://github.com/nikosmeds))
 
 ## [0.0.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2018-08-06)
 **Merged pull requests:**
