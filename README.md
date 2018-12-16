@@ -34,7 +34,7 @@ Use it in a playbook as follows:
 - hosts: all
   become: yes
   roles:
-    - cloudalchemy.mysqld-exporter
+    - cloudalchemy.mysqld_exporter
 ```
 
 ### Demo site
