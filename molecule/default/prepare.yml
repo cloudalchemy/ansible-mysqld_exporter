@@ -21,7 +21,7 @@
       Debian:
         stretch: "mysqld"
       Fedora:
-        Twenty Eight: "mariadb"
+        Thirty: "mariadb"
       Ubuntu:
     mysql_package: "mariadb-server"
     mysql_service: "{{ mysql_service_map[ansible_distribution][ansible_distribution_release] | default('mysql') }}"
