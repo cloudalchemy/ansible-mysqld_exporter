@@ -1,6 +1,7 @@
 [Unit]
 Description=Prometheus Mysqld Exporter
 After=network-online.target
+StartLimitInterval=0
 
 [Service]
 Type=simple
@@ -30,6 +31,7 @@ ExecStart=/usr/local/bin/mysqld_exporter \
 
 SyslogIdentifier=mysqld_exporter
 Restart=always
+RestartSec=1
 
 [Install]
 WantedBy=multi-user.target
