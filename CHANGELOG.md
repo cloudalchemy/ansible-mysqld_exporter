@@ -1,7 +1,6 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter)
-
+## [0.2.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2019-07-29)
 **Closed issues:**
 
 - Ansible galaxy name is not correct in the README [\#6](https://github.com/cloudalchemy/ansible-mysqld-exporter/issues/6)
@@ -9,6 +8,7 @@
 
 **Merged pull requests:**
 
+- New prometheus/mysqld\_exporter upstream release! [\#13](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/13) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - added restartsec and startlimitinterval configurations [\#12](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/12) ([oguzhaninan](https://github.com/oguzhaninan))
 - New prometheus/mysqld\_exporter upstream release! [\#10](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/10) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - Synchronize files from cloudalchemy/skeleton [\#9](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/9) ([cloudalchemybot](https://github.com/cloudalchemybot))
