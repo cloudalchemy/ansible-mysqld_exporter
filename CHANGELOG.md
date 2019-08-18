@@ -1,5 +1,11 @@
 # Change Log
 
+## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter)
+
+**Merged pull requests:**
+
+- Synchronize files from cloudalchemy/skeleton [\#14](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/14) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.2.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2019-07-29)
 **Closed issues:**
 
