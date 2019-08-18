@@ -2,6 +2,11 @@
 
 ## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter)
 
+**Merged pull requests:**
+
+- Synchronize files from cloudalchemy/skeleton [\#14](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/14) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
+## [0.2.0](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter) (2019-07-29)
 **Closed issues:**
 
 - Ansible galaxy name is not correct in the README [\#6](https://github.com/cloudalchemy/ansible-mysqld-exporter/issues/6)
@@ -9,6 +14,12 @@
 
 **Merged pull requests:**
 
+- New prometheus/mysqld\_exporter upstream release! [\#13](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/13) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- added restartsec and startlimitinterval configurations [\#12](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/12) ([oguzhaninan](https://github.com/oguzhaninan))
+- New prometheus/mysqld\_exporter upstream release! [\#10](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/10) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Synchronize files from cloudalchemy/skeleton [\#9](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/9) ([cloudalchemybot](https://github.com/cloudalchemybot))
+- Wait for network to be online [\#8](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/8) ([paulfantom](https://github.com/paulfantom))
+- Synchronize files from cloudalchemy/skeleton. [\#7](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/7) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - move to ansible 2.7 [\#5](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/5) ([paulfantom](https://github.com/paulfantom))
 - Fix README typo [\#4](https://github.com/cloudalchemy/ansible-mysqld-exporter/pull/4) ([sdvcrx](https://github.com/sdvcrx))
 
