@@ -4,7 +4,7 @@
   tasks:
   - name: Gather variables for each operating system
     debug:
-      var: ansible_distribution_release
+      var: ansible_distribution
   - name: Install mysqld server
     package:
       name: "{{ mysql_package }}"
@@ -16,12 +16,9 @@
       state: started
   vars:
     mysql_service_map:
-      CentOS:
-        Core: "mariadb"
-      Debian:
-        stretch: "mysqld"
-      Fedora:
-        Thirty: "mariadb"
-      Ubuntu:
+      CentOS: "mariadb"
+      Debian: "mysqld"
+      Fedora: "mariadb"
+      Ubuntu: "mysql"
     mysql_package: "mariadb-server"
-    mysql_service: "{{ mysql_service_map[ansible_distribution][ansible_distribution_release] | default('mysql') }}"
+    mysql_service: "{{ mysql_service_map[ansible_distribution] | default('mysql') }}"
