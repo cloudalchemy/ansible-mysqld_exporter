@@ -54,9 +54,11 @@ tox
 ```
 To run a custom molecule command on custom environment with only default test scenario:
 ```sh
-tox -e py27-ansible25 -- molecule test -s default
+tox -e py35-ansible28 -- molecule test -s default
 ```
 For more information about molecule go to their [docs](http://molecule.readthedocs.io/en/latest/).
+
+If you would like to run tests on remote docker host just specify `DOCKER_HOST` variable before running tox tests.
 
 ## Travis CI
 
