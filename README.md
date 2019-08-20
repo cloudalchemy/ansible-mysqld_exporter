@@ -22,7 +22,8 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 
 | Name           | Default Value | Description                        |
 | -------------- | ------------- | -----------------------------------|
-| `mysqld_exporter_version` | 0.12.1 aren't supported. |
+
+| `mysqld_exporter_version` | 0.12.1 | mysqld exporter package version. Versions before 0.11.0 aren't supported. |
 | `mysqld_exporter_web_listen_address` | "0.0.0.0:9104" | Address on which mysqld exporter will listen |
 
 ## Example

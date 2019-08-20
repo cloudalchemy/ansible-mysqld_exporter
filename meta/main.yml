@@ -19,7 +19,7 @@ galaxy_info:
     - 7
   - name: Fedora
     versions:
-    - 27
+    - 30
   galaxy_tags:
   - monitoring
   - prometheus
