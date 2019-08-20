@@ -7,18 +7,14 @@
       var: ansible_distribution
   - name: Install mysqld server
     package:
-      name: "{{ mysql_package }}"
+      name: "mariadb-server"
       state: present
   - name: Start mysql server
     systemd:
-      name: "{{ mysql_service }}"
-      enabled: true
+      name: "{{ item }}"
       state: started
-  vars:
-    mysql_service_map:
-      CentOS: "mariadb"
-      Debian: "mysqld"
-      Fedora: "mariadb"
-      Ubuntu: "mysql"
-    mysql_package: "mariadb-server"
-    mysql_service: "{{ mysql_service_map[ansible_distribution] | default('mysql') }}"
+    ignore_errors: true
+    with_items:
+      - mysql
+      - mysqld
+      - mariadb
