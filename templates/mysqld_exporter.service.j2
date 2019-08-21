@@ -42,7 +42,7 @@ ProtectHome=true
 RemoveIPC=true
 RestrictSUIDSGID=true
 
-{% if node_exporter_systemd_version | int >= 232 %}
+{% if mysqld_exporter_systemd_version | int >= 232 %}
 PrivateUsers=true
 ProtectControlGroups=true
 ProtectKernelModules=true
