@@ -2,6 +2,7 @@
 Description=Prometheus Mysqld Exporter
 After=network-online.target
 StartLimitInterval=0
+StartLimitIntervalSec=0
 
 [Service]
 Type=simple
@@ -11,7 +12,6 @@ Group={{ __mysqld_exporter_group }}
 Environment="DATA_SOURCE_NAME={{ mysqld_exporter_dsn }}"
 {% endif %}
 ExecStart=/usr/local/bin/mysqld_exporter \
-    --web.listen-address {{ mysqld_exporter_web_listen_address }} \
     {% for c in mysqld_exporter_collect -%}
     {%   if not c is mapping -%}
     --collect.{{ c }} \
@@ -28,12 +28,12 @@ ExecStart=/usr/local/bin/mysqld_exporter \
     {% if mysqld_exporter_my_cnf != "" %}
     --config.my-cnf {{ mysqld_exporter_my_cnf }} \
     {% endif %}
+    --web.listen-address {{ mysqld_exporter_web_listen_address }}
 
 SyslogIdentifier=mysqld_exporter
 Restart=always
-RestartSec=1
+RestartSec=5
 
-CapabilityBoundingSet=CAP_SET_UID
 LockPersonality=true
 NoNewPrivileges=true
 MemoryDenyWriteExecute=true
