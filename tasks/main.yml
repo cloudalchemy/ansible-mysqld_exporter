@@ -48,8 +48,8 @@
     group: root
   notify:
     - restart mysqld exporter
-
   when: not ansible_check_mode
+
 - name: Copy the mysqld_exporter systemd service file
   template:
     src: mysqld_exporter.service.j2
@@ -57,7 +57,7 @@
     owner: root
     group: root
     mode: 0644
-  no_log: true
+  no_log: "{{ not lookup('env', 'ANSIBLE_DEBUG') | bool }}"
   notify:
     - restart mysqld exporter
 
