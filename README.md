@@ -1,11 +1,11 @@
-<p><img src="https://azure.microsoft.com/svghandler/sql-database?width=45&height=60" alt="database logo" title="database" align="right" height="60" /></p>
+<p><img src="http://www.timtyson.us/wordpress/wp-content/uploads/2014/05/database-mysql-logo-572x572.png" alt="database logo" title="database" align="right" height="60" /></p>
 
 # Ansible Role: mysqld exporter
 
-[![Build Status](https://travis-ci.com/cloudalchemy/ansible-mysqld-exporter.svg?branch=master)](https://travis-ci.com/cloudalchemy/ansible-mysqld-exporter)
+[![Build Status](https://travis-ci.com/cloudalchemy/ansible-mysqld_exporter.svg?branch=master)](https://travis-ci.com/cloudalchemy/ansible-mysqld_exporter)
 [![License](https://img.shields.io/badge/license-MIT%20License-brightgreen.svg)](https://opensource.org/licenses/MIT)
-[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.mysqld_exporter-blue.svg)](https://galaxy.ansible.com/cloudalchemy/mysqld-exporter/)
-[![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-mysqld-exporter.svg)](https://github.com/cloudalchemy/ansible-mysqld-exporter/tags)
+[![Ansible Role](https://img.shields.io/badge/ansible%20role-cloudalchemy.mysqld_exporter-blue.svg)](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter/)
+[![GitHub tag](https://img.shields.io/github/tag/cloudalchemy/ansible-mysqld_exporter.svg)](https://github.com/cloudalchemy/ansible-mysqld_exporter/tags)
 [![IRC](https://img.shields.io/badge/irc.freemysqld.net-%23cloudalchemy-yellow.svg)](https://kiwiirc.com/nextclient/#ircs://irc.freemysqld.net/#cloudalchemy)
 
 ## Description
