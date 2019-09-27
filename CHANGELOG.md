@@ -1,8 +1,6 @@
 # Change Log
 
-
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter)
-
+## [0.3.0](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter) (2019-09-27)
 **Merged pull requests:**
 
 - increase security of systemd service file [\#20](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/20) ([paulfantom](https://github.com/paulfantom))
