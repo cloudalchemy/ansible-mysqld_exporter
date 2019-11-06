@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- \[REPO SYNC\] Update releaser.sh [\#23](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/23) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] add support for CentOS8 [\#22](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/22) ([cloudalchemybot](https://github.com/cloudalchemybot))
 
 ## [0.3.0](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter) (2019-09-27)
