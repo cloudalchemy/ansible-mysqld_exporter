@@ -4,6 +4,7 @@
 
 **Merged pull requests:**
 
+- \[REPO SYNC\] add declarative label sync; add autolabelling PRs [\#26](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/26) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] molecule: use CI images from quay.io instead of dockerhub [\#24](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/24) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] Update releaser.sh [\#23](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/23) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] add support for CentOS8 [\#22](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/22) ([cloudalchemybot](https://github.com/cloudalchemybot))
