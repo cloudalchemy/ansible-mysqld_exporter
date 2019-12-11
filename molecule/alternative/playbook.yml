@@ -1,0 +1,9 @@
+---
+- name: Run role
+  hosts: all
+  any_errors_fatal: true
+  roles:
+    - ansible-mysqld_exporter
+  vars:
+    mysqld_exporter_binary_local_dir: "/tmp/mysqld_exporter-linux-amd64"
+    mysqld_exporter_dsn: "root@(localhost:3306)/"
