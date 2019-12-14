@@ -1,9 +1,9 @@
 # Change Log
 
-## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter)
-
+## [0.4.0](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter) (2019-12-14)
 **Merged pull requests:**
 
+- add option to propagate binaries without access to internet [\#27](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/27) ([DaazKu](https://github.com/DaazKu))
 - \[REPO SYNC\] add declarative label sync; add autolabelling PRs [\#26](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/26) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] molecule: use CI images from quay.io instead of dockerhub [\#24](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/24) ([cloudalchemybot](https://github.com/cloudalchemybot))
 - \[REPO SYNC\] Update releaser.sh [\#23](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/23) ([cloudalchemybot](https://github.com/cloudalchemybot))
