@@ -1,0 +1,37 @@
+---
+- name: Prepare
+  hosts: localhost
+  gather_facts: false
+  vars:
+    go_arch: amd64
+    mysqld_exporter_version: 0.12.1
+  tasks:
+    - name: Download mysqld_exporter binary to local folder
+      become: false
+      get_url:
+        url: "https://github.com/prometheus/mysqld_exporter/releases/download/v{{ mysqld_exporter_version }}/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch }}.tar.gz"
+        dest: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch }}.tar.gz"
+      register: _download_binary
+      until: _download_binary is succeeded
+      retries: 5
+      delay: 2
+      run_once: true
+      check_mode: false
+
+    - name: Unpack mysqld_exporter binary
+      become: false
+      unarchive:
+        src: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch }}.tar.gz"
+        dest: "/tmp"
+        creates: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch }}/mysqld_exporter"
+      run_once: true
+      check_mode: false
+
+    - name: link to mysqld_exporter binaries directory
+      become: false
+      file:
+        src: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-amd64"
+        dest: "/tmp/mysqld_exporter-linux-amd64"
+        state: link
+      run_once: true
+      check_mode: false
