@@ -1,5 +1,11 @@
 # Change Log
 
+## [**Next release**](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter)
+
+**Merged pull requests:**
+
+- \[REPO SYNC\] remove IRC link [\#28](https://github.com/cloudalchemy/ansible-mysqld_exporter/pull/28) ([cloudalchemybot](https://github.com/cloudalchemybot))
+
 ## [0.4.0](https://galaxy.ansible.com/cloudalchemy/mysqld_exporter) (2019-12-14)
 **Merged pull requests:**
 
