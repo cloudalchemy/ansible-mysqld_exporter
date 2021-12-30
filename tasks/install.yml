@@ -22,6 +22,7 @@
         url: "https://github.com/prometheus/mysqld_exporter/releases/download/v{{ mysqld_exporter_version }}/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
         dest: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
         checksum: "sha256:{{ __mysqld_exporter_checksum }}"
+        mode: 0755
       register: _download_binary
       until: _download_binary is succeeded
       retries: 5
@@ -34,6 +35,7 @@
       unarchive:
         src: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}.tar.gz"
         dest: "/tmp"
+        mode: 0755
         creates: "/tmp/mysqld_exporter-{{ mysqld_exporter_version }}.linux-{{ go_arch_map[ansible_architecture] | default(ansible_architecture) }}/mysqld_exporter"
       delegate_to: localhost
       check_mode: false
