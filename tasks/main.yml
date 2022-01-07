@@ -2,9 +2,3 @@
 - import_tasks: preflight.yml
 
 - import_tasks: install.yml
-
-- name: Ensure mysqld_exporter is enabled on boot
-  systemd:
-    daemon_reload: true
-    name: mysqld_exporter
-    enabled: true

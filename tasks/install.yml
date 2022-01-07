@@ -70,3 +70,4 @@
   no_log: "{{ not lookup('env', 'ANSIBLE_DEBUG') | bool }}"
   notify:
     - restart mysqld exporter
+    - Ensure mysqld_exporter is enabled on boot
