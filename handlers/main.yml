@@ -5,9 +5,11 @@
     daemon_reload: true
     name: mysqld_exporter
     state: restarted
+  when: not ansible_check_mode
 
 - name: Ensure mysqld_exporter is enabled on boot
   systemd:
     daemon_reload: true
     name: mysqld_exporter
     enabled: true
+  when: not ansible_check_mode
