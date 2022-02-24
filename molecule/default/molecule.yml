@@ -39,15 +39,6 @@ platforms:
     privileged: true
     volumes:
       - /sys/fs/cgroup:/sys/fs/cgroup:ro
-  - name: centos8
-    pre_build_image: true
-    image: quay.io/paulfantom/molecule-systemd:centos-8
-    docker_host: "${DOCKER_HOST:-unix://var/run/docker.sock}"
-    privileged: true
-    volumes:
-      - /sys/fs/cgroup:/sys/fs/cgroup:ro
-    groups:
-      - python3
   - name: fedora
     pre_build_image: true
     image: quay.io/paulfantom/molecule-systemd:fedora-30
