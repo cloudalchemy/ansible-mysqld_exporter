@@ -16,7 +16,7 @@ jobs:
       - checkout
       - run: pip install ansible ansible-lint yamllint flake8
       - run: mkdir -p .cache/roles && ln -s ../.. .cache/roles/${CIRCLE_PROJECT_REPONAME}
-      - run: ansible-lint
+      - run: ansible-lint .
       - run: yamllint .
       - run: flake8
 
