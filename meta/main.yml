@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  namespace: cloudalchemy
   author: Pawel Krupa
   description: Prometheus Mysqld Exporter
   role_name: mysqld_exporter
