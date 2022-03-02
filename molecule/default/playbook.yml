@@ -2,6 +2,6 @@
 - hosts: all
   any_errors_fatal: true
   roles:
-    - ansible-mysqld_exporter
+    - cloudalchemy.mysqld_exporter
   vars:
     mysqld_exporter_dsn: "root@(localhost:3306)/"
