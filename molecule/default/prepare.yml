@@ -13,7 +13,7 @@
     systemd:
       name: "{{ item }}"
       state: started
-    ignore_errors: true
+    failed_when: false
     with_items:
       - mysql
       - mysqld
