@@ -24,6 +24,11 @@ All variables which can be overridden are stored in [defaults/main.yml](defaults
 | `mysqld_exporter_version` | 0.12.1 | mysqld exporter package version. Versions before 0.11 aren't supported. |
 | `mysqld_exporter_binary_local_dir` | "" | Allows to use local packages instead of ones distributed on github. As parameter it takes a directory where `mysqld_exporter` binary is stored on host on which ansible is ran. This overrides `mysqld_exporter_version` parameter |
 | `mysqld_exporter_web_listen_address` | "0.0.0.0:9104" | Address on which mysqld exporter will listen |
+| `mysqld_exporter_dsn` | "exporter:password@(localhost:3306)/" | DSN of the MySQL instance to scrape metrics from |
+| `mysqld_exporter_my_cnf` | "" | Path to a `.my.cnf` file to read MySQL credentials from. |
+| `mysqld_exporter_collect` | [] | Optional list of [collectors](https://github.com/prometheus/mysqld_exporter#collector-flags) to include in metrics |
+| `mysqld_exporter_no_collect` | [] | Optional list of [collectors](https://github.com/prometheus/mysqld_exporter#collector-flags) to exclude in metrics |
+| `mysqld_exporter_web_config_file` | "exporter:password@(localhost:3306)/" | Path to a [web configuration file](https://github.com/prometheus/mysqld_exporter#tls-and-basic-authentication) |
 
 ## Example
 

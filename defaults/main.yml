@@ -2,11 +2,8 @@
 mysqld_exporter_binary_local_dir: ""
 mysqld_exporter_version: 0.12.1
 mysqld_exporter_web_listen_address: "0.0.0.0:9104"
-
 mysqld_exporter_dsn: "exporter:password@(localhost:3306)/"
-
 mysqld_exporter_my_cnf: ""
-
 mysqld_exporter_collect: []
-
 mysqld_exporter_no_collect: []
+mysqld_exporter_web_config_file: ""

@@ -28,6 +28,9 @@ ExecStart=/usr/local/bin/mysqld_exporter \
     {% if mysqld_exporter_my_cnf != "" %}
     --config.my-cnf {{ mysqld_exporter_my_cnf }} \
     {% endif %}
+    {% if mysqld_exporter_web_config_file != "" %}
+    --web.config.file {{ mysqld_exporter_web_config_file }} \
+    {% endif %}
     --web.listen-address {{ mysqld_exporter_web_listen_address }}
 
 SyslogIdentifier=mysqld_exporter
