@@ -1,3 +1,7 @@
+# DEPRECATED
+
+**This role has been deprecated in favor of a the [prometheus-community/ansible](https://github.com/prometheus-community/ansible) collection.**
+
 <p><img src="http://www.timtyson.us/wordpress/wp-content/uploads/2014/05/database-mysql-logo-572x572.png" alt="database logo" title="database" align="right" height="60" /></p>
 
 # Ansible Role: mysqld exporter
